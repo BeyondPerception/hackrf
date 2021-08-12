@@ -1,10 +1,5 @@
-This repository contains hardware designs and software for HackRF,
-a low cost, open source Software Defined Radio platform.
+# About
+This repository contains a modified version of the hackrf one firmware designed to run on an LPC43xx ARM Cortex-M4 microcontroller. The changes here make it so on reset request (using `hackrf_spiflash -R`), the rf power and 1v8 power will also be reset. The hackrf one (at least the one I have) fails to correctly transmit gps I/Q data if the transmit has been started, stopped, then started again. This firmware patch fixes this issue.
 
-![HackRF One](https://raw.github.com/mossmann/hackrf/master/doc/HackRF-One-fd0-0009.jpeg)
-
-(photo by fd0 from https://github.com/fd0/hackrf-one-pictures)
-
-principal author: Michael Ossmann <mike@ossmann.com>
-
+### Hackrf website
 http://greatscottgadgets.com/hackrf/
