@@ -153,9 +153,16 @@ void usb_set_descriptor_by_serial_number(void)
 
 int main(void) {
 	pin_setup();
+    disable_rf_power();
+	disable_1v8_power();
+
+	delay(1000000);
+
 	enable_1v8_power();
 #ifdef HACKRF_ONE
 	enable_rf_power();
+
+	delay(1000000);
 #endif
 	cpu_clock_init();
 
