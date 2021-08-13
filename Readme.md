@@ -11,5 +11,8 @@ Additionally, download the latest gcc toolchain from here and add the `bin/` dir
 
 https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
 
+# Flashing
+You can flash the firmware to your hackrf one with `hackrf_spiflash -w hackrf_usb.bin`
+
 ### Hackrf website
 http://greatscottgadgets.com/hackrf/
