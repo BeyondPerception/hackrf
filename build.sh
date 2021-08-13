@@ -16,4 +16,4 @@ cd build
 cmake ../
 make
 
-mv hackrf_usb.bin ../../
+mv hackrf_usb.bin ../../../
