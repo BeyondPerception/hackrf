@@ -6,10 +6,14 @@ The following dependencies are required for building the firmware:
 - libusb-1.0-0-dev
 - libfftw3-dev
 - python-yaml
+- cmake
+- make
 
 Additionally, download the latest gcc toolchain from here and add the `bin/` directory to your path:
 
 https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+
+Finally, run `./build.sh` from the root directory of this repository.
 
 # Flashing
 You can flash the firmware to your hackrf one with `hackrf_spiflash -w hackrf_usb.bin`
